@@ -10,18 +10,18 @@ import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic.js';
 import Link from '@ckeditor/ckeditor5-link/src/link.js';
 import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph.js';
 
-class Editor extends InlineEditor {}
+class TitleEditor extends InlineEditor {}
 
 // Plugins to include in the build.
-Editor.builtinPlugins = [
-	Bold,
-	Essentials,
-	Heading,
-	Italic,
-	Link,
-	Paragraph
+TitleEditor.builtinPlugins = [
+  Bold,
+  Essentials,
+  Heading,
+  Italic,
+  Link,
+  Paragraph,
 ];
-Editor.defaultConfig = {
+TitleEditor.defaultConfig = {
   toolbar: {
     items: ["heading", "|", "bold", "italic", "link"],
   },
@@ -29,4 +29,4 @@ Editor.defaultConfig = {
   licenseKey: "",
 };
 
-export default Editor;
+export default TitleEditor;
